@@ -1,0 +1,262 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAMP - Home</title>
+    <link rel="stylesheet" type="text/css" href="assests\css\main.css">
+    <link rel="icon" type="image/ico" href="favicon.ico">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="..\assests\js\main.js"></script>
+</head>
+
+<body class="no-touch">
+    <center><img id="logo" src="images\logo.png" alt="logo"></center>
+    <center><span id="caption"><em>Stamp Digital: Your Online Magazine</em></span></center>
+    <div>
+
+        <ul id="first_nav">
+            <!--<li><img id="logo" src="/images/temp_logo.svg" alt="temp logo"></li>
+            <li><span id="caption"><em>NAME</em></span></center></li>-->
+            <li><a class="active" href="index.html">HOME</a></li>
+
+            <li><a href="archives\index.html">ARCHIVES</a></li>
+
+            <li><a href="media\index.html">MEDIA</a></li>
+
+            <li><a href="gallery\index.html">GALLERY</a></li>
+
+            <li><a href="about\index.html">ABOUT</a></li>
+
+			<form id="search">
+			<input type="text" placeholder="Search...">
+
+			</form>
+
+
+        </ul>
+
+    </div>
+
+
+    <!-- Promos -->
+    <div class="content" id="content" role="main">
+    <div class="promos" id="promos">
+        <a class="promo promo--small pos-1 gallery-cell" href="articles\The Person Im Glad I Met.html">
+            <div class="promo-block">
+                <div class="promo-block-image" style="background-image:url('images/Clover.png')"></div>
+            </div>
+            <div class="promo-content promo-content-fade">
+                <span class="badge">INTERVIEW</span>
+                <h3 class="promo-title">
+      A Person I'm Glad I Met
+    </h3>
+
+                <!-- <p class="promo-excerpt">
+
+                </p> -->
+
+            </div>
+        </a>
+        <a class="promo promo--small pos-2 gallery-cell" href="articles/The STAB In The Back.html">
+            <div class="promo-block">
+                <div class="promo-block-image" style="background-image:url('images/nicole.png')"></div>
+            </div>
+            <div class="promo-content promo-content-fade">
+                <span class="badge">EDITORIAL</span>
+                <h3 class="promo-title">
+     The STAB in the Back
+    </h3>
+
+                <!-- <p class="promo-excerpt">
+
+                </p> -->
+
+            </div>
+        </a>
+        <a class="promo promo--small pos-3 gallery-cell" href="articles/Dignums Digs.html">
+            <div class="promo-block">
+                <div class="promo-block-image" style="background-image:url('images/Izzy Dignum.png')"></div>
+            </div>
+            <div class="promo-content promo-content-fade">
+                <span class="badge">OPINION</span>
+                <h3 class="promo-title">
+      Dignum's Digs: Fashion
+    </h3>
+<!--
+                <p class="promo-excerpt">
+
+                </p> -->
+
+            </div>
+        </a>
+        <a class="promo promo--small-tall pos-4 gallery-cell" href="articles/Children Of Choba.html">
+            <div class="promo-block">
+                <div class="promo-block-image" style="background-image:url('https://pbs.twimg.com/media/Ce8eNYCWIAE0A5R.jpg')"></div>
+            </div>
+            <div class="promo-content promo-content-fade">
+                <span class="badge">CHARITABLE</span>
+                <h3 class="promo-title">
+     Fundraising for Children of Choba
+    </h3>
+
+                <!-- <p class="promo-excerpt">
+
+                </p> -->
+
+            </div>
+        </a>
+        <a class="promo promo--small pos-5 gallery-cell" href="articles/Talent Show.html">
+            <div class="promo-block">
+                <div class="promo-block-image" style="background-image:url('images/talentshow.png')"></div>
+            </div>
+            <div class="promo-content promo-content-fade">
+                <span class="badge">REVIEW</span>
+                <h3 class="promo-title">
+      Talent Show
+    </h3>
+
+                <!-- <p class="promo-excerpt">
+
+                </p> -->
+
+            </div>
+        </a>
+        <a class="promo promo--medium-short pos-6 gallery-cell" href="articles\University Challenge.html">
+            <div class="promo-block">
+                <div class="promo-block-image" style="background-image:url('images/universitychallenge2.png')"></div>
+            </div>
+            <div class="promo-content promo-content-fade">
+                <span class="badge">REVIEW</span>
+                <h3 class="promo-title">
+      University Challenge
+    </h3>
+
+                <!-- <p class="promo-excerpt">
+
+                </p> -->
+
+            </div>
+        </a>
+
+    </div>
+    </div>
+
+<div id="shunnoham-page" ng-app = "App"  ng-controller="suggestedArticles">
+
+  <div id="content" class="container">
+    <div id="primary" class="content-area">
+      <div class="shunno-main">
+        <main class="col-md-8 shunno-loop" role="main">
+          <div class="shunno-block-title"><span class="shunno-latest-title">Latest Articles</span><span class="shunno-trending-title">Trending Articles</span><i title="Read the trending articles" class="shunno-trend-switcher shunno shunno-trend"></i><i title="Read the latest articles"
+            class="shunno-latest-switcher shunno shunno-return"></i></div>
+          <div class="shunno-trend-articles"></div>
+          <div class="loader trend-loader"></div>
+          <div class="shunno-latest-article-switcher">
+
+            <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-device category-devices category-microsoft category-news">
+              <a href="articles\In Shalott House.html" title="In Shalott House">
+                <div class="shunno-loop-thumb"> <img width="760" height="500" src="images\old manor.jpg" class="attachment-shunno-loop-article-thumb size-shunno-loop-article-thumb wp-post-image" alt=""
+                  />
+                  <div class="shunno-loop-overlay"></div>
+                </div>
+                <div class="shunno-loop-article-meta">
+                  <h2>In Shalott House</h2> </a> <span class="shunnoarticlemtapls"><p class='shunno-meta'>by&nbsp;<a href='#' title='Read more articles from this author'>Morgan McGowan</a></p><p class='shunno-mobileicon-detect shunno-meta'><i class='shunno shunno-clock'></i>11:10am</p><p class="shunno-mfnsites shunno-mobileicon-detect shunno-meta">
+              </p>
+              </span>
+              <p class="shunno-loop-article-excerpt"> This will be a fictional story apparently by Morgan McGowan</p>
+              </article>
+              </div>
+
+
+            <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-device category-devices category-microsoft category-news">
+              <a href="articles\The lady in the mountain.html" title="The Lady in the Mountain">
+                <div class="shunno-loop-thumb"> <img width="760" height="500" src="images\Lady.png" class="attachment-shunno-loop-article-thumb size-shunno-loop-article-thumb wp-post-image" alt=""
+                  />
+                  <div class="shunno-loop-overlay"></div>
+                </div>
+                <div class="shunno-loop-article-meta">
+                  <h2>The Lady in the Mountain</h2> </a> <span class="shunnoarticlemtapls"><p class='shunno-meta'>by&nbsp;<a href='#' title='Read more articles from this author'>Tom Milnes</a></p><p class='shunno-mobileicon-detect shunno-meta'><i class='shunno shunno-clock'></i>10:15am</p><p class="shunno-mfnsites shunno-mobileicon-detect shunno-meta">
+              </p>
+              </span>
+              <p class="shunno-loop-article-excerpt"> This is a fictional story about a beautiful young princess written by Tom Milnes</p>
+              </div>
+            </article>
+
+            <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-device category-devices category-microsoft category-news">
+              <a href="articles\Are EU in or out.html" title="Are EU in or out?">
+                <div class="shunno-loop-thumb"> <img width="760" height="500" src="images\EU.png" class="attachment-shunno-loop-article-thumb size-shunno-loop-article-thumb wp-post-image" alt=""
+                  />
+                  <div class="shunno-loop-overlay"></div>
+                </div>
+                <div class="shunno-loop-article-meta">
+                  <h2>Are EU in or out?</h2> </a> <span class="shunnoarticlemtapls"><p class='shunno-meta'>by&nbsp;<a href='#' title='Read more articles from this author'>Sadie Pitcher</a></p><p class='shunno-mobileicon-detect shunno-meta'><i class='shunno shunno-clock'></i>10:15am</p><p class="shunno-mfnsites shunno-mobileicon-detect shunno-meta">
+              </p>
+              </span>
+              <p class="shunno-loop-article-excerpt">This article, by Sadie Pitcher, will give you a basic knowledge on whether we should stay or leave the European Union. </p>
+              </div>
+            </article>
+
+            <article class="post type-post status-publish format-standard has-post-thumbnail hentry category-device category-devices category-microsoft category-news">
+              <a href="articles\The news in Limericks.html" title="The news in Limericks">
+                <div class="shunno-loop-thumb"> <img width="760" height="500" src="images\isisbomb.jpg" class="attachment-shunno-loop-article-thumb size-shunno-loop-article-thumb wp-post-image" alt=""
+                  />
+                  <div class="shunno-loop-overlay"></div>
+                </div>
+                <div class="shunno-loop-article-meta">
+                  <h2>The news in Limericks</h2> </a> <span class="shunnoarticlemtapls"><p class='shunno-meta'>by&nbsp;<a href='#' title='Read more articles from this author'>Anonymous</a></p><p class='shunno-mobileicon-detect shunno-meta'><i class='shunno shunno-clock'></i>10:15am</p><p class="shunno-mfnsites shunno-mobileicon-detect shunno-meta">
+              </p>
+              </span>
+              <p class="shunno-loop-article-excerpt">Here is a poem about ISIS </p>
+              </div>
+            </article>
+
+
+
+
+
+       </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div ng-app = "App"  ng-controller="MainController">
+
+  </div>
+
+
+
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <center class="footer-info">
+      Stamp Digital is an online magazine...<br /> Maintained by students and used to show information and news about our school <br> <br>
+      <span class="footer-small-print"><em>STAMP DIGITAL: ST AUGUSTINE'S COLLEGE</em></span>
+    </center>
+    <div class="shunno-footer-main container">
+      <div class="col-md-4 footer-logo">
+
+      </div>
+      <center>
+      <div class="col-md-8 footer-links">
+
+        <!-- <ul class="site-links">
+          test
+          teds -->
+    <!--  </div> -->
+      </center>
+      <!-- <div class="footer-copyright"> <span>Stamp Digital</span><span class="footer-queries">St. Augustines Catholic School</span></div> -->
+    </div>
+  </footer>
+  <div style="display:none"></div>
+
+
+</div>
+
+
+
+<!--Extra Stuff?-->
+
+</body>
+
+</html>

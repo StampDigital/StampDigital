@@ -1,0 +1,148 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAMP - In Shalott House</title>
+  <link rel="stylesheet" type="text/css" href="..\assests\css\main.css">
+  <link rel="icon" type="image/ico" href="..\favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="..\assests\js\main.js"></script>
+</head>
+
+<body class="no-touch" ng-app="App">
+  
+  <!-- <div ng-include="'..\sharedLayouts\header.html'"></div> -->
+  <center><img id="logo" src="..\images\logo.png" alt="logo"></center>
+  <center><span id="caption"><em>Stamp Digital: Your Online Magazine</em></span></center>
+  <div>
+
+    <ul id="first_nav">
+
+      <li><a href="..\index.html">HOME</a></li>
+
+      <li><a href="..\archives\index.html">ARCHIVES</a></li>
+
+      <li><a href="..\media\index.html">MEDIA</a></li>
+
+      <li><a href="..\gallery\index.html">GALLERY</a></li>
+
+      <li><a href="..\about\index.html">ABOUT</a></li>
+    <form id="search">
+			<input type="text" placeholder="Search...">
+
+			</form>
+
+
+	</ul>
+
+  </div>
+
+  <div class="">
+    <center>
+      <!--<img class="article_image" src="http://media4.popsugar-assets.com/files/2014/08/08/878/n/1922507/caef16ec354ca23b_thumb_temp_cover_file32304521407524949.xxxlarge/i/Funny-Cat-GIFs.jpg" alt="cat" />-->
+    <video class="article_image" controls>
+		<source src="../images/IMAG0516.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+	</video>
+	  <h1>Interview with Morgan McGowan </h1>
+      <h2>Interviewed by Eleanor Powell </h2>
+	  <h2>In Shalott House </h2>
+      <div class="article_text"><br>
+      <p>
+        She was born many years ago, long before the days of war and violence. The day she was born was a cold winter's day when a crisp frost coated the ground and roses froze in their vases and a thin cry broke through the cracks in the old broken windows. It was an old house, and very beautiful, but the scarlet ivy which crept up the walls
+		showed the neglect which it had faced, and the flickering light of a candle in the window of an upper room was the only sign that people still lived there. A thin cry, like the wail of a new-born kitten, escaped from the room, echoing out across the vast grounds, long since abandoned by any gardener who cared for them, and the light dimmed.
+		A low sob burst out, which turned into a flood of tears, mingling with the cries of the child to create a heart-breaking symphony of pain and grief.
+
+        <p/><br>
+        <p>
+          Two days later, the body of a young woman was brought out of the house, and laid down in a shallow grave by a pair of hired hands from the village. All transactions were done with a shadowy figure who would not leave a house, but stood there, cradling a silent child to their heart.
+		  For years afterwards the only evidence of any life within the old manor house was the appearance and disappearance of bottles of milk at the door, and the monthly deliveries of food to the servant's entrance at the back of the building. In later years, childish laughter would bubble out over the overgrown gardens, and later still a high, clear,
+		  fragile voice would ring out.  Sometimes a white figure would be seen at the windows, ghost-like in its paleness and the ease with which it moved through the inside rooms, golden hair flowing down a back which was only ever turned away from the outside world.
+		  Inside the house the walls were covered by hundreds upon thousands of paintings of the outside world. Each image was framed by the grey stone which made up the inner walls of the house, and framing that was an ornate gilded rectangle. Because the girl in the house only saw
+		  the world through mirrors, and so each picture was framed by the things she saw surrounding them. She was a weak child; her mother&#x27s death had left her feeble and unable to care for herself, and the outside world was nothing but a much longed-for impossibility. Even at sixteen, she had never left the house, and had in fact barely left the room in which she was born,
+		  so fearful was her protector of the possibility of her death.
+
+
+
+        </p><br>
+        <p>
+		Of course, as she grew, she often longed to go outside; to breathe the fresh air and to see the water-lilies bloom in the spring seemed to her to be the greatest prize on earth, but she knew it was forbidden, and so satisfied herself with gazing at the shadows in the mirror. Each day the desire grew stronger, leaving her longing to laugh with the market girls in their red cloaks
+		as they walked through the mirror each week, accompanied by young men who guarded them as carefully as though they had been fragile glass, or precious crystal. As carefully as though they had been fragile glass, or precious crystal. Most of all, she longed to have someone like that for herself: a brave protector who would keep her safe from the dangers of reality, but to them she was
+		but a myth, a story to tell their families when they returned in the evenings. I saw the Shalott Girl today. All in white she was, and pale as death. I wouldn&#39t go up to the old house if you paid me. The old willow in front of the house was a particular favourite with the young lovers, who snuck out to visit each other as evening fell. A boat was moored there in the river, and couples
+		would sail away together for hours at a time, before returning it to its rightful place. It was these couples in particular who most distressed the girl, for she knew that she could never do such things as they did, without risking death. It so happened that one day she was distracted from her drawing by the sound of hooves pounding up towards the village.
+
+
+
+        </p>
+      </div>
+    </center>
+
+
+  </div>
+  <br />
+<hr />
+
+	<div class="main_block" ng-app="App" ng-controller="MainController">
+		<!-- <h3 class="suggested_title">Suggested Artcles</h3> -->
+
+
+    <div class="inner_block">
+    <a ng-href="{{suggested_1_link}}"><h4 class = "suggestedText">{{suggested_1_name}}</h4></a>
+		<img class = "suggestedPic" ng-src ="{{suggested_1_pic}}">
+    </div>
+
+    <div class="inner_block">
+    <a ng-href="{{suggested_2_link}}"><h4 class = "suggestedText">{{suggested_2_name}}</h4></a>
+		<img class = "suggestedPic" ng-src ="{{suggested_2_pic}}">
+    </div>
+
+    <div class="inner_block">
+    <a ng-href="{{suggested_3_link}}"><h4 class = "suggestedText">{{suggested_3_name}}</h4></a>
+		<img class = "suggestedPic" ng-src ="{{suggested_3_pic}}">
+    </div>
+
+    <div class="inner_block">
+    <a ng-href="{{suggested_4_link}}"><h4 class = "suggestedText">{{suggested_4_name}}</h4></a>
+    <img class = "suggestedPic" ng-src ="{{suggested_4_pic}}">
+    <br /><br />
+    </div>
+
+    <hr />
+  </div>
+
+<br /><br />
+
+    <footer id="colophon" class="site-footer" role="contentinfo">
+      <center class="footer-info">
+        Stamp Digital is an online magazine...<br /> Maintained by students and used to show information and news about our school <br> <br>
+        <span class="footer-small-print"><em>STAMP DIGITAL: ST AUGUSTINE'S COLLEGE</em></span>
+      </center>
+      <div class="shunno-footer-main container">
+        <div class="col-md-4 footer-logo">
+
+        </div>
+        <center>
+        <div class="col-md-8 footer-links">
+
+          <!-- <ul class="site-links">
+            test
+            teds -->
+      <!--  </div> -->
+        </center>
+        <!-- <div class="footer-copyright"> <span>Stamp Digital</span><span class="footer-queries">St. Augustines Catholic School</span></div> -->
+      </div>
+    </footer>
+    <div style="display:none"></div>
+
+
+  </div>
+
+
+
+
+  <!--Extra Stuff?-->
+
+</body>
+
+</html>
