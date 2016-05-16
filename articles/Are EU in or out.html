@@ -10,7 +10,7 @@
 	<script src="..\assests\js\main.js"></script>
 </head>
 
-<body class="no-touch">
+<body class="no-touch" ng-app="App">
 
   <div ng-app ="app" ng-include="'header.html'"></div>
 
@@ -46,6 +46,35 @@
         </p>
       </div>
     </center>
+<hr />
+    <div class="main_block" ng-app="App" ng-controller="MainController">
+  		<!-- <h3 class="suggested_title">Suggested Artcles</h3> -->
+      <div class="inner_block">
+      <a ng-href="{{suggested_1_link}}"><h4 class = "suggestedText">{{suggested_1_name}}</h4>
+  		<img class = "suggestedPic" ng-src ="{{suggested_1_pic}}"></a>
+      </div>
+
+      <div class="inner_block">
+      <a ng-href="{{suggested_2_link}}"><h4 class = "suggestedText">{{suggested_2_name}}</h4>
+  		<img class = "suggestedPic" ng-src ="{{suggested_2_pic}}"></a>
+      </div>
+
+      <div class="inner_block">
+      <a ng-href="{{suggested_3_link}}"><h4 class = "suggestedText">{{suggested_3_name}}</h4>
+  		<img class = "suggestedPic" ng-src ="{{suggested_3_pic}}"></a>
+      </div>
+
+      <div class="inner_block">
+      <a ng-href="{{suggested_4_link}}"><h4 class = "suggestedText">{{suggested_4_name}}</h4>
+      <img class = "suggestedPic" ng-src ="{{suggested_4_pic}}"></a>
+      <br /><br />
+      </div>
+
+      <hr />
+    </div>
+
+  <br /><br />
+
 
 
   </div>

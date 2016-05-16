@@ -10,7 +10,7 @@
   <script src="..\assests\js\main.js"></script>
 </head>
 
-<body class="no-touch">
+<body class="no-touch" ng-app="App">
   <center><img id="logo" src="..\images\logo.png" alt="logo"></center>
   <center><span id="caption"><em>Stamp Digital: Your Online Magazine</em></span></center>
   <div>
@@ -27,11 +27,16 @@
       <li><a href="..\gallery\index.html">GALLERY</a></li>
 
       <li><a href="..\about\index.html">ABOUT</a></li>
-    <form id="search">
+    <!-- <form id="search">
 			<input type="text" placeholder="Search...">
 
-			</form>
-
+			</form> -->
+      <form id="search" method="get" action="http://www.google.com/search">
+        <input type="text"   name="q" size="25" style="color:#808080;"
+      maxlength="255" value="Search..."
+      onfocus="if(this.value==this.defaultValue)this.value=''; this.style.color='white';" onblur="if(this.value=='')this.value=this.defaultValue; "/>
+      <input type="hidden" name="sitesearch" value="stampdigital.github.io" />
+      </form>
 
 	</ul>
 
@@ -102,13 +107,34 @@
         </p>
       </div>
     </center>
+<hr />
+        <div class="main_block" ng-app="App" ng-controller="MainController">
+      		<!-- <h3 class="suggested_title">Suggested Artcles</h3> -->
+          <div class="inner_block">
+          <a ng-href="{{suggested_1_link}}"><h4 class = "suggestedText">{{suggested_1_name}}</h4>
+      		<img class = "suggestedPic" ng-src ="{{suggested_1_pic}}"></a>
+          </div>
 
+          <div class="inner_block">
+          <a ng-href="{{suggested_2_link}}"><h4 class = "suggestedText">{{suggested_2_name}}</h4>
+      		<img class = "suggestedPic" ng-src ="{{suggested_2_pic}}"></a>
+          </div>
 
-  </div>
+          <div class="inner_block">
+          <a ng-href="{{suggested_3_link}}"><h4 class = "suggestedText">{{suggested_3_name}}</h4>
+      		<img class = "suggestedPic" ng-src ="{{suggested_3_pic}}"></a>
+          </div>
 
-  <div ng-app="App" ng-controller="suggestedArticles">
-  <h3>Suggested Artcles</h3>
-  <h4>{{name_1}}</h4>
+          <div class="inner_block">
+          <a ng-href="{{suggested_4_link}}"><h4 class = "suggestedText">{{suggested_4_name}}</h4>
+          <img class = "suggestedPic" ng-src ="{{suggested_4_pic}}"></a>
+          <br /><br />
+          </div>
+
+          <hr />
+        </div>
+
+      <br /><br />
 
 
   </div>
