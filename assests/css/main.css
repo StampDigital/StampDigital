@@ -2,6 +2,10 @@ h1, h2, h3, h4, h5{
   font-family: "Segoe UI"
 }
 
+#disqus_thread {
+	padding: 5em;
+}
+
 .suggestedText{
   font-family: "Segoe UI";
   font-size: 21px;
